@@ -1,4 +1,4 @@
-import { HackathonCard } from "@/components/hackathon-card";
+// import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -144,7 +144,7 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
+                  // video={project.video}
                   links={project.links}
                 />
               </BlurFade>
@@ -152,7 +152,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -194,28 +194,27 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contato
+                Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Vamos construir juntos e tornar suas ideias em realidade.
+                Let&apos;s build together and turn your ideas into reality.
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  with a direct question on Linkedin
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond whenever I can.
               </p>
             </div>
           </BlurFade>
